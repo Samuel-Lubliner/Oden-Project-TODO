@@ -35,6 +35,8 @@ In order to import a CSS file from within a JavaScript module, you need to insta
 
 `npm install --save-dev style-loader css-loader`
 
+Load images like backgrounds and icons using the built-in Asset Modules.
+
 TODO:
 
 - Note that webpack will not alter any code other than import and export statements. If you are using other ES2015 features, make sure to use a transpiler such as Babel via webpack's loader system.
