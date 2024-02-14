@@ -2,7 +2,7 @@
   "name": "oden-project-todo",
   "version": "1.0.0",
   "description": "TODO list made with JavaScript and [localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API/Using_the_Web_Storage_API)",
-  "main": "index.js",
+  "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
