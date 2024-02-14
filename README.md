@@ -31,6 +31,10 @@ package.json
 
 Now the `npm run build` command can be used in place of the npx command we used earlier. Note that within scripts we can reference locally installed npm packages by name the same way we did with npx. This convention is the standard in most npm-based projects because it allows all contributors to use the same set of common scripts.
 
+In order to import a CSS file from within a JavaScript module, you need to install and add the style-loader and css-loader to your module configuration:
+
+`npm install --save-dev style-loader css-loader`
+
 TODO:
 
 - Note that webpack will not alter any code other than import and export statements. If you are using other ES2015 features, make sure to use a transpiler such as Babel via webpack's loader system.
