@@ -151,3 +151,16 @@ Let's start by setting mode to 'development' and title to 'Development'.
 ## Using source maps
 
 In order to make it easier to track down errors and warnings, JavaScript offers [source maps](https://blog.teamtreehouse.com/introduction-source-maps), which map your compiled code back to your original source code.
+
+## Choosing a Development Tool
+
+It quickly becomes a hassle to manually run npm run build every time you want to compile your code.
+
+There are a couple of different options available in webpack that help you automatically compile your code whenever it changes. In most cases, you probably would want to use webpack-dev-server.
+
+Now run npm run watch from the command line and see how webpack compiles your code. You can see that it doesn't exit the command line because the script is currently watching your files.
+
+The optimization.runtimeChunk: 'single' was added because in this example we have more than one entrypoint on a single HTML page. Without this, we could get into trouble described here. Read the Code Splitting chapter for more details.
+
+Warning
+webpack-dev-server doesn't write any output files after compiling. Instead, it keeps bundle files in memory and serves them as if they were real files mounted at the server's root path. If your page expects to find the bundle files on a different path, you can change this with the devMiddleware.publicPath option in the dev server's configuration.
