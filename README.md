@@ -124,4 +124,14 @@ Now, when you import MyImage from './my-image.png', that image will be processed
 
 ## Output Management
 
+[Documentation](https://webpack.js.org/guides/output-management/)
+
 So far we've manually included all our assets in our index.html file, but as your application grows and once you start using hashes in filenames and outputting multiple bundles, it will be difficult to keep managing your index.html file manually.
+
+## Setting up HtmlWebpackPlugin
+
+First install the plugin and adjust the webpack.config.js file:
+
+`npm install --save-dev html-webpack-plugin`
+
+HtmlWebpackPlugin by default will generate its own index.html file, even though we already have one in the dist/ folder. This means that it will replace our index.html file with a newly generated one.
