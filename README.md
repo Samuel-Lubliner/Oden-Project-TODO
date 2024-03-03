@@ -141,3 +141,13 @@ HtmlWebpackPlugin by default will generate its own index.html file, even though 
 In general it's good practice to clean the /dist folder before each build, so that only used files will be generated. Let's take care of that with output.clean option.
 
 Now run an npm run build and inspect the /dist folder. If everything went well you should now only see the files generated from the build and no more old files!
+
+## Development
+
+Warning: Development tools are only meant for development, please avoid using them in production!
+
+Let's start by setting mode to 'development' and title to 'Development'.
+
+## Using source maps
+
+In order to make it easier to track down errors and warnings, JavaScript offers [source maps](https://blog.teamtreehouse.com/introduction-source-maps), which map your compiled code back to your original source code.
