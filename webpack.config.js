@@ -15,5 +15,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
    output: {
     filename: '[name].bundle.js',
      path: path.resolve(__dirname, 'dist'),
+     clean: true,
    },
  };
